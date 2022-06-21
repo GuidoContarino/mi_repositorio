@@ -103,6 +103,9 @@ button:hover{
     margin-left: 55%;
     margin-top: 12rem;
 }
+.img-main:hover{
+    transform: scale(1.25);
+}
 /*no logre poner la imagen bien a la derecha del texto */
 .subtitulo-main {
     font-size: 2.3rem;
