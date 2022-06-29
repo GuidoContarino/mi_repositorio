@@ -1,0 +1,577 @@
+@import "./partials/_variables.scss";
+@import "./partials/_header";
+/*Navbar y footer de todas las paginas*/
+@font-face {
+  font-family: "Sansita";
+  src: url(../fonts/Sansita-Italic.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Sansita", sans-serif;
+}
+
+footer {
+  background-color: black;
+  display: grid;
+  grid-template-areas: "imagen" "lista" "copy";
+  justify-content: center;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+footer h4 {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  grid-area: copy;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lista-footer {
+  display: flex;
+  gap: 1rem;
+  grid-area: lista;
+  margin: 0 auto;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.lista-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+.img-footer {
+  margin: 0 auto;
+}
+
+button:hover {
+  background: lightslategray;
+  color: #fff;
+}
+
+/*Todas las paginas*/
+/*Pagina Principal index.html*/
+.titulo-principal {
+  font-size: 3rem;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 5%;
+  display: inline-block;
+}
+
+.contenedor {
+  width: 100%;
+  margin-right: 50%;
+  margin-bottom: 100px;
+}
+
+.main-contenedor-p {
+  display: inline;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.img-main {
+  display: inline;
+  width: 40%;
+  height: 40%;
+  margin-left: 55%;
+  margin-top: 12rem;
+}
+
+/*no logre poner la imagen bien a la derecha del texto */
+.subtitulo-main {
+  font-size: 2.3rem;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contenedor-section {
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid red;
+  background-color: black;
+}
+
+.section-div-img {
+  width: 100%;
+}
+
+.section-div-h3 {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.section-div-p {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/*Fin de pagina index.html/*
+
+/*Pagina autos.html*/
+.h2-main-autos {
+  text-align: center;
+  margin: 0.4rem 0;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 1, 2px;
+  background-color: red;
+  width: 100%;
+}
+
+.vende-autos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-autos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px;
+  width: 85%;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+
+.article-imgs-autos {
+  width: 90%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.article-transf:hover {
+  transform: scale(1.2);
+}
+
+.contenedor-h2-autos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.article-h2-autos {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+/*Fin pagina autos.html*/
+/* Inicio pagina marcas.html*/
+.titulo-principal-marcas {
+  font-size: 3rem;
+  text-align: left;
+  margin-left: 200px;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.contenedor-main-marcas {
+  width: 100%;
+  height: 40%;
+  margin-bottom: 100px;
+}
+
+.main-div-p-marcas {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-left: 200px;
+  margin-bottom: 3rem;
+}
+
+.button-1-marcas {
+  width: 300px;
+  height: 50px;
+  background-color: black;
+  border-radius: 0.5rem;
+  margin-left: 200px;
+  border: 1px solid transparent;
+}
+
+.button-cotiza-marcas {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.section-img-1-marcas {
+  margin-top: 0px;
+  margin-right: 100px;
+  margin-left: 55%;
+  display: inline;
+  width: 40%;
+  height: 40%;
+}
+
+/*No Logro ubicar bien la imagen al lado del texto*/
+.article-img-marcas {
+  width: 530px;
+  height: 415px;
+  text-align: left;
+  display: inline;
+  margin-left: 200px;
+}
+
+.contenedor-article-marcas {
+  margin-left: 1rem;
+}
+
+.article-h2-marcas {
+  font-size: 2rem;
+  display: inline-block;
+  text-align: center;
+  margin-left: 1200px;
+  top: 415px;
+  margin-right: 200px;
+}
+
+.article-submenu-marcas {
+  margin-left: 1200px;
+  margin-right: 200px;
+  display: inline-block;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.article-lista-marcas {
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.lista-span-marcas {
+  font-size: 1.3rem;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.button-marcas-2 {
+  width: 300px;
+  height: 50px;
+  background-color: black;
+  border-radius: 0.5rem;
+  margin-left: 1300px;
+  border: 1px solid transparent;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button-cotiza-marcas {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/*fin de pagina marcas.html/*
+/*Inico de pagina contacto.html*/
+.main-pagcontacto {
+  height: 43%;
+  width: 100%;
+}
+
+.titulo-principal-pagcontacto {
+  font-size: 3rem;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 50px;
+  display: inline-block;
+  margin-left: 200px;
+  position: relative;
+  top: 80px;
+}
+
+.main-contenedor-pagcontacto {
+  width: 100%;
+  margin-right: 50%;
+  margin-bottom: 100px;
+  height: 43%;
+}
+
+.main-contenedor-p-pagcontacto {
+  display: inline;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-left: 20px;
+  margin-left: 200px;
+  position: relative;
+  top: 100px;
+}
+
+.img-main-pagcontacto {
+  display: inline;
+  width: 40%;
+  height: 40%;
+  margin-left: 55%;
+  position: relative;
+  bottom: 125px;
+}
+
+/*no logre poner la imagen bien a la derecha del texto */
+.section-selector-pagcontacto {
+  display: inline-block;
+  align-items: center;
+  height: 5rem;
+  width: 25rem;
+  font-size: 1rem;
+  background-color: white;
+  padding: 1rem;
+  padding-right: 1rem;
+  margin-left: 200px;
+  position: relative;
+  bottom: 420px;
+}
+
+.selector-options-pagcontacto {
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  padding: 1rem;
+  margin: 5px;
+}
+
+.contenedor-h2-pagcontacto {
+  font-size: 2.3rem;
+  text-align: left;
+  text-decoration: underline;
+  display: block;
+  margin-top: 5px;
+  position: relative;
+  margin-left: 200px;
+}
+
+.article-1-pagcontacto {
+  display: inline-block;
+  margin-left: 200px;
+  border: 2px solid red;
+  margin-top: 60px;
+  background-color: black;
+  min-height: 13rem;
+  width: 350px;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 30px;
+}
+
+.article-2-pagcontacto {
+  display: inline-block;
+  margin-left: 150px;
+  border: 2px solid red;
+  margin-top: 60px;
+  background-color: black;
+  min-height: 13rem;
+  width: 350px;
+  border-radius: 10px;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.article-3-pagcontacto {
+  display: inline-block;
+  margin-left: 150px;
+  border: 2px solid red;
+  margin-top: 60px;
+  background-color: black;
+  min-height: 13rem;
+  width: 350px;
+  border-radius: 10px;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.article-h3-pagcontacto {
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-top: 10px;
+  padding: 1rem;
+}
+
+.ubicacion {
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding: 1rem;
+}
+
+.article-span-contacto {
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  top: 50px;
+  padding: 0.6rem;
+}
+
+.article-p-contacto {
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  top: 50px;
+  padding: 0.6rem;
+}
+
+.button-article-contacto {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  left: 250px;
+}
+
+/*fin de pagina contacto.html*/
+/*Incio de pagina redes.html*/
+.main-form-redes {
+  width: 95%;
+  max-width: 500px;
+  margin: auto;
+  background: lightgray;
+  border-radius: 7px;
+}
+
+.main-h2-redes {
+  padding: 20px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 30px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 5px solid red;
+}
+
+.contenedor-inputs-redes {
+  padding: 10px 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.main-input-redes {
+  width: 400px;
+  text-align: center;
+  height: 40px;
+}
+
+.main-input-redes-2 {
+  width: 400px;
+  text-align: center;
+  height: 60px;
+}
+
+.main-button-redes {
+  margin: auto;
+  background: red;
+  color: #fff;
+  border-radius: 4px;
+  height: 40px;
+  width: 50%;
+}
+
+.div-span-redes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.main-span-redes {
+  font-size: 1.5rem;
+}
+
+/* Fin de la pagina redes.html*/
+@media screen and (max-width: 500px) {
+  .encabezado nav img {
+    width: 30%;
+  }
+
+  .navbar {
+    gap: 20px;
+  }
+
+  .navbar li a {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .lista-footer a {
+    font-size: 1.1rem;
+  }
+
+  .img-footer {
+    width: 30%;
+  }
+
+  /*pagina principal*/
+  .titulo-principal {
+    font-size: 1.6rem;
+    justify-content: center;
+    display: flex;
+  }
+
+  .img-main {
+    display: flex;
+    width: 90vw;
+    height: auto;
+    margin-top: 8rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  .contenedor-autos {
+    grid-template-rows: 150px;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .article-transf:hover {
+    transform: scale(1.1);
+  }
+
+  .contenedor-h2-autos {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=main.css.map */
