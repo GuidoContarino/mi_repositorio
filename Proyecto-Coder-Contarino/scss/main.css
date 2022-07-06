@@ -1,14 +1,28 @@
-@import "./partials/_variables.scss";
-@import "./partials/_header";
-/*Navbar y footer de todas las paginas*/
-@font-face {
-  font-family: "Sansita";
-  src: url(../fonts/Sansita-Italic.ttf);
+.encabezado {
+  display: flex;
+  flex-direction: column;
 }
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Sansita", sans-serif;
+.encabezado .nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  gap: 20px;
+}
+.encabezado .nav .encabezado nav img {
+  width: 10%;
+}
+.encabezado .navbar {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  padding: 20px;
+}
+.encabezado .navbar li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 footer {
@@ -19,17 +33,10 @@ footer {
   grid-gap: 1rem;
   padding: 1rem;
 }
-
-footer h4 {
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
-  grid-area: copy;
+footer .img-footer {
   margin: 0 auto;
-  text-align: center;
 }
-
-.lista-footer {
+footer .lista-footer {
   display: flex;
   gap: 1rem;
   grid-area: lista;
@@ -37,16 +44,120 @@ footer h4 {
   justify-content: center;
   margin: 0 auto;
 }
-
-.lista-footer a {
-  color: #fff;
+footer .lista-footer a {
+  color: white;
   text-decoration: none;
   font-size: 2rem;
   margin: 0 auto;
 }
-
-.img-footer {
+footer h4 {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  grid-area: copy;
   margin: 0 auto;
+  text-align: center;
+}
+
+.subtitulo-main {
+  text-align: center;
+  margin: 0.4rem 0;
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  color: #fff;
+  letter-spacing: 1, 2px;
+  background-color: red;
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+.section .contenedor-section {
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid red;
+  background-color: black;
+}
+.section .contenedor-section .section-div-img {
+  width: 100%;
+}
+.section .contenedor-section .section-div-h3 {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+.section .contenedor-section .section-div-p {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.vende-autos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vende-autos .h2-main-autos {
+  text-align: center;
+  margin: 0.4rem 0;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 1, 2px;
+  background-color: red;
+  width: 100%;
+}
+.vende-autos .contenedor-autos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px;
+  width: 85%;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+.vende-autos .contenedor-autos .article-transf:hover {
+  transform: scale(1.2);
+}
+.vende-autos .contenedor-autos .article-imgs-autos {
+  width: 90%;
+  height: 90%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.vende-autos .contenedor-autos .contenedor-h2-autos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+}
+.vende-autos .contenedor-autos .contenedor-h2-autos .article-h2-autos {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+/*Navbar y footer de todas las paginas*/
+@font-face {
+  font-family: "Sansita";
+  src: url(../fonts/Sansita-Italic.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Sansita", sans-serif;
 }
 
 button:hover {
@@ -86,105 +197,9 @@ button:hover {
 }
 
 /*no logre poner la imagen bien a la derecha del texto */
-.subtitulo-main {
-  font-size: 2.3rem;
-  text-align: center;
-  text-decoration: underline;
-  margin-bottom: 1rem;
-}
-
-.section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-  margin-bottom: 2rem;
-}
-
-.contenedor-section {
-  width: 25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 5px solid red;
-  background-color: black;
-}
-
-.section-div-img {
-  width: 100%;
-}
-
-.section-div-h3 {
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  font-size: 1.4rem;
-  margin-top: 10px;
-}
-
-.section-div-p {
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  margin-top: 20px;
-}
-
 /*Fin de pagina index.html/*
 
 /*Pagina autos.html*/
-.h2-main-autos {
-  text-align: center;
-  margin: 0.4rem 0;
-  padding: 1rem 0;
-  font-size: 1.5rem;
-  color: #fff;
-  letter-spacing: 1, 2px;
-  background-color: red;
-  width: 100%;
-}
-
-.vende-autos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.contenedor-autos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 400px;
-  width: 85%;
-  grid-gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 1.5rem;
-}
-
-.article-imgs-autos {
-  width: 90%;
-  height: 90%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.article-transf:hover {
-  transform: scale(1.2);
-}
-
-.contenedor-h2-autos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10%;
-}
-
-.article-h2-autos {
-  margin-top: 10px;
-  margin-left: 5px;
-}
-
 /*Fin pagina autos.html*/
 /* Inicio pagina marcas.html*/
 .titulo-principal-marcas {

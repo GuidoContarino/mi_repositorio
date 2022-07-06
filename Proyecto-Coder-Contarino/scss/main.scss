@@ -1,5 +1,9 @@
-@import "./partials/_variables.scss";
+@import "./partials/_colores";
 @import "./partials/_header";
+@import "./partials/_footer";
+@import "./partials/_pagprincipal";
+@import "./partials/_pagautos";
+
 /*Navbar y footer de todas las paginas*/
 @font-face {
     font-family: "Sansita";
@@ -11,42 +15,6 @@
     font-family: "Sansita" , sans-serif;
 }
 
-footer {
-    background-color: black;
-    display: grid;
-    grid-template-areas:
-    "imagen"
-    "lista"
-    "copy";
-    justify-content: center;
-    grid-gap: 1rem;
-    padding: 1rem;
-}
-footer h4 {
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    grid-area: copy;
-    margin: 0 auto;
-    text-align: center;
-}
-.lista-footer{
-    display: flex;
-    gap: 1rem;
-    grid-area: lista;
-    margin: 0 auto;
-    justify-content: center;
-    margin: 0 auto;
-}
-.lista-footer a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2rem;
-    margin: 0 auto;
-}
-.img-footer{
-    margin:0 auto;
-}
 button:hover{
     background:lightslategray;
     color:#fff
@@ -81,91 +49,10 @@ button:hover{
     margin-top: 12rem;
 }
 /*no logre poner la imagen bien a la derecha del texto */
-.subtitulo-main {
-    font-size: 2.3rem;
-    text-align: center;
-    text-decoration: underline;
-    margin-bottom: 1rem;
-}
-.section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-    margin-bottom: 2rem;
-}
-.contenedor-section{
-    width: 25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 5px solid red;
-    background-color: black;
-}
-.section-div-img {
-    width: 100%;
-}
-.section-div-h3 {
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    font-size: 1.4rem;
-    margin-top: 10px;
-}
-.section-div-p {
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin-top: 20px;
-}
+
 /*Fin de pagina index.html/*
 
 /*Pagina autos.html*/
-.h2-main-autos{
-    text-align: center;
-    margin: 0.4rem 0;
-    padding: 1rem 0;
-    font-size: 1.5rem;
-    color: #fff;
-    letter-spacing: 1,2px;
-    background-color: red;
-    width: 100%;
-}
-.vende-autos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.contenedor-autos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px;
-    width: 85%;
-    grid-gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 1.5rem;
-}
-.article-imgs-autos{
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
-}
-.article-transf:hover{
-    transform: scale(1.2);
-}
-.contenedor-h2-autos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10%;
-}
-.article-h2-autos{
-    margin-top: 10px;
-    margin-left: 5px;
-}
 /*Fin pagina autos.html*/
 /* Inicio pagina marcas.html*/
 .titulo-principal-marcas {

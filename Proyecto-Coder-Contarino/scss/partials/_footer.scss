@@ -1,0 +1,38 @@
+footer {
+    background-color: black;
+    display: grid;
+    grid-template-areas: "imagen" "lista" "copy";
+    justify-content: center;
+    grid-gap: 1rem;
+    padding: 1rem;
+
+    .img-footer {
+        margin:0 auto;
+      }
+    
+    .lista-footer {
+        display: flex;
+        gap: 1rem;
+        grid-area: lista;
+        margin: 0 auto;
+        justify-content: center;
+        margin: 0 auto;
+      }
+      .lista-footer a {
+        color: white;
+        text-decoration: none;
+        font-size: 2rem;
+        margin: 0 auto;
+      }
+    h4 {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+        grid-area: copy;
+        margin: 0 auto;
+        text-align: center;
+      }
+      
+
+    
+  }
