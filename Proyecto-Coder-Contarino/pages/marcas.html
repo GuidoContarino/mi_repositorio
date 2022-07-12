@@ -11,6 +11,8 @@
 	<title>Automobile Contarino Vende</title>
     <link rel="icon" href="../img/consesionariacontarino - copia.ico ">
     <link rel="stylesheet" href="../scss/main.css">
+    <!--linkeo de bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
     <!--Encabezado con logo de la página-->
@@ -29,39 +31,38 @@
     </header>
     <hr>
     <!--Titulo y cotiza tu auto button-->
-    <main>
-        <h1 class="titulo-principal-marcas">Vendé tu auto!</h1>
+    <h2 class="h2-main-autos">Vende Tu Auto</h2>
+    <main class="main-marcas">
         <div class="contenedor-main-marcas">
-            <img src="../img/vendetuauto.jpg" alt="vende tu auto" class="section-img-1-marcas">
-            <p class="main-div-p-marcas">¡Olvidate de todo!
-                <br>
-                Vende tu auto en cuestion de minutos o cambialo por uno nuestro
-            </p>    
-            <button type="button" class="button-1-marcas"><strong class="button-cotiza-marcas">Cotizá tu auto</strong> </button>
+            <img data-aos="flip-right" class="img-contenedor-main" src="../img/vendetuauto.jpg" alt="vende tu auto"> 
+            <p class="p-contenedor-main">¡Olvidate de todo!
+            <br> Vende tu auto en cuestion de minutos o cambialo por uno nuestro</p> 
+            <button type="button" class="button-marcas-2"><strong class="button-cotiza-marcas">Cotizá tu auto</strong> </button>
         </div>
+    <!--No logro cambiar el font-size del P que esta dentro del div-->
     </main>
     <!--imagenes-->
     <section>
-        <article>
-            <img src="../img/usados.jpg" alt="usados" class="article-img-marcas">
+        <article class="main-marcas">
             <!--Lista de porque vender con nosotros-->
-            <div class="contenedor-article-marcas">
-                <h2 class="article-h2-marcas">¡Vende tu auto! Elegi nuestras ofertas</h2>
-                <ol class="article-submenu-marcas">
-                    <li class="article-lista-marcas">
-                        <span class="lista-span-marcas">Contanos sobre tu auto</span>
+            <div class="contenedor-main-marcas">
+                <img data-aos="flip-right" src="../img/usados.jpg" alt="usados" class="img-contenedor-main">
+                <h2 class="p-contenedor-main">¡Vende tu auto! Elegi nuestras ofertas</h2>
+                <ol class="lista-contenedor-article">
+                    <li class="numero-lista-article">
+                        <span>Contanos sobre tu auto</span>
                         <br>
-                        <span class="lista-span-marcas">Año, Modelo, Kilometraje, etc...</span>
+                        <span>Año, Modelo, Kilometraje, etc...</span>
                     </li>
-                    <li class="article-lista-marcas">
-                        <span class="lista-span-marcas">Te ofertamos al instante</span>
+                    <li class="numero-lista-article">
+                        <span>Te ofertamos al instante</span>
                         <br>
-                        <span class="lista-span-marcas">Contamos con una gran cantidad de profesionales que te daran el valor real por tu usado</span>
+                        <span>Contamos con una gran cantidad de profesionales que te daran el valor real por tu usado</span>
                     </li>
-                    <li class="article-lista-marcas">
-                        <span class="lista-span-marcas">Elegi lugar y hora de inspección</span>
+                    <li class="numero-lista-article">
+                        <span>Elegi lugar y hora de inspección</span>
                         <br>
-                        <span class="lista-span-marcas">Te contamos con valores reales el estado de tu auto gracias a las tecnologias que manejamos</span>
+                        <span>Te contamos con valores reales el estado de tu auto gracias a las tecnologias que manejamos</span>
                     </li>
                 </ol>
                 <button  type="button" class="button-marcas-2"><strong class="button-cotiza-marcas">Vende tu auto </strong></button>
@@ -84,6 +85,8 @@
             <h4>Todos los derechos Reservados</h4>
         </div>
     </footer>
+    <!--Linkeo de bootstrap js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </body>
 </html>
    

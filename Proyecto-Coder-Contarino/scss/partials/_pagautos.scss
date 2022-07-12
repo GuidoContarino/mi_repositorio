@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     .h2-main-autos {
-        @include sizes(100%,);
+        @include sizes(100%,auto);
         text-align: center;
         margin: 0.4rem 0;
         padding: 1rem 0;
@@ -18,7 +18,7 @@
         background-color: red;
       }
       .contenedor-autos {
-        @include sizes(85%,);
+        @include sizes(85%,auto);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 400px;
@@ -43,4 +43,4 @@
               }
         }
       }
-  }
+}

@@ -1,0 +1,60 @@
+@mixin sizes ($width , $height) {
+    height: $height;
+    width: $width;
+}
+$estilossection: (
+    forma: flex,
+    direccion: column,
+    justify: center,
+    items: center,
+    ancho: 30rem,
+);
+.h1-pagcontacto{
+    @include sizes(100%,auto);
+    font-family: Sansita;
+    text-align: center;
+    margin: 0.4rem 0;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    color: #fff;
+    letter-spacing: 1, 2px;
+    background-color: red;
+}
+.section-pagcontacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: map-get($estilossection,justify);
+    gap: 3rem;
+    margin-bottom: 2rem;
+    .contenedor-section-pagcontacto{
+        width: map-get($estilossection,ancho);
+        display:map-get($estilossection,forma);
+        justify-content: map-get($estilossection,justify);
+        align-items: map-get($estilossection,items);
+        flex-direction: map-get($estilossection,direccion);
+        border: 5px solid red;
+        background-color: black;
+        height: 20rem; 
+        .article-h3-pagcontacto{
+            text-align: map-get($estilossection,items);
+            color: white;
+            text-decoration: none;
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+        .ubicacon{
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+        .button-article-contacto{
+            height: 5rem;
+            width: 8rem;
+            border: #fff;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+    }
+}

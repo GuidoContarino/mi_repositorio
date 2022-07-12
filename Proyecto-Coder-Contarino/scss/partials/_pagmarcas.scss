@@ -1,0 +1,58 @@
+@mixin sizes ($width , $height) {
+    height: $height;
+    width: $width;
+  }
+.h2-main-autos {
+    @include sizes(100%,auto);
+    font-family: Sansita;
+    text-align: center;
+    margin: 0.4rem 0;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    color: #fff;
+    letter-spacing: 1, 2px;
+    background-color: red;
+  }
+.main-marcas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  .contenedor-main-marcas{
+    width: 90%;
+    .img-contenedor-main{
+      margin: 2rem;
+      width: 100%;
+    }
+  .p-contenedor-main{
+    text-align: center;
+    font-size: 1.5rem;
+    }
+  .button-marcas-2 {
+    display: flex;
+    background-color: black;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 5rem;
+    }
+  .button-cotiza-marcas{
+    color: white;
+    font-size: 1.2rem; 
+  }
+  .lista-contenedor-article{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    .numero-lista-article{
+      margin-top: 2rem;
+    }
+  }
+  }
+}

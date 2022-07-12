@@ -1,0 +1,58 @@
+.main-form-redes {
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background: lightgray;
+    border-radius: 7px;
+    .main-h2-redes {
+        padding: 20px;
+        text-align: center;
+        font-weight: 100;
+        font-size: 30px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom: 5px solid red;
+      }
+      .contenedor-inputs-redes {
+        padding: 10px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        input {
+            margin-bottom: 15px;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 3px;
+            border: 1px solid gray;
+          }
+          
+          .main-input-redes {
+            width: 400px;
+            text-align: center;
+            height: 40px;
+          }
+          
+          .main-input-redes-2 {
+            width: 400px;
+            text-align: center;
+            height: 60px;
+          }
+          .main-button-redes {
+            margin: auto;
+            background: red;
+            color: #fff;
+            border-radius: 4px;
+            height: 40px;
+            width: 50%;
+          }
+      }
+      .div-span-redes {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 10px;
+        .main-span-redes {
+            font-size: 1.5rem;
+          }
+      }
+  }
+  
