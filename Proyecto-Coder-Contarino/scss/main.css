@@ -1,64 +1,6 @@
-.encabezado {
-  display: flex;
-  flex-direction: column;
+.a-index{
+  font-size: 1.6rem !important;
 }
-.encabezado .nav {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: black;
-  gap: 20px;
-}
-.encabezado .nav .encabezado nav img {
-  width: 10%;
-}
-.encabezado .navbar {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-  padding: 20px;
-}
-.encabezado .navbar li a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-footer {
-  background-color: black;
-  display: grid;
-  grid-template-areas: "imagen" "lista" "copy";
-  justify-content: center;
-  grid-gap: 1rem;
-  padding: 1rem;
-}
-footer .img-footer {
-  margin: 0 auto;
-}
-footer .lista-footer {
-  display: flex;
-  gap: 1rem;
-  grid-area: lista;
-  margin: 0 auto;
-  justify-content: center;
-  margin: 0 auto;
-}
-footer .lista-footer a {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  margin: 0 auto;
-}
-footer h4 {
-  color: white;
-  font-size: 1.1rem;
-  font-weight: bold;
-  grid-area: copy;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .subtitulo-main {
   text-align: center;
   margin: 0.4rem 0;
@@ -214,7 +156,7 @@ footer h4 {
   text-align: center;
   margin: 0.4rem 0;
   padding: 1rem 0;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: #fff;
   letter-spacing: 1, 2px;
   background-color: red;

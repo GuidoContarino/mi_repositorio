@@ -12,35 +12,10 @@
         text-align: center;
         margin: 0.4rem 0;
         padding: 1rem 0;
-        font-size: 1.5rem;
+        font-size: 2.2rem;
         color: #fff;
         letter-spacing: 1, 2px;
         background-color: red;
-      }
-      .contenedor-autos {
-        @include sizes(85%,auto);
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 400px;
-        grid-gap: 2rem;
-        margin-bottom: 2rem;
-        margin-top: 1.5rem;
-        .article-transf:hover {
-            transform: scale(1.2);
-          }
-        .article-imgs-autos {
-          @include sizes(90%,90%);
-          object-fit: cover;
-        }
-        .contenedor-h2-autos {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 10%;
-            .article-h2-autos {
-                margin-top: 10px;
-                margin-left: 5px;
-              }
-        }
+
       }
 }
